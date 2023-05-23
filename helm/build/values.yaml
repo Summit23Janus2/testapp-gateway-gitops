@@ -1,0 +1,15 @@
+app:
+  name: testapp-poi-gateway-app
+  namespace: testapp
+  cluster: .apps.summit23blues.6mbu.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23Janus2/testapp-gateway
+  org: Summit23Janus2
+  name: testapp-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: testapp/poi-gateway-app
+  tag: latest
